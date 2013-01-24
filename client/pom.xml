@@ -1,0 +1,29 @@
+﻿<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>appserv</groupId>
+		<artifactId>appserv</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>..</relativePath>
+	</parent>
+	<artifactId>client</artifactId>
+	<packaging>jar</packaging>
+	<dependencies>
+		<!-- Dépendances AppServ -->
+		<dependency>
+			<groupId>appserv</groupId>
+			<artifactId>xmlserial</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<!-- Fin Dépendances AppServ -->
+		
+		<!-- Dépendances EJB3 -->
+		<dependency>
+			<groupId>javax.ejb</groupId>
+			<artifactId>ejb-api</artifactId>
+			<version>3.0</version>
+		</dependency>
+		<!-- Fin Dépendances EJB3 -->
+	</dependencies>
+</project>

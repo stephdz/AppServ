@@ -1,0 +1,55 @@
+<neurone.ReseauComplexe>
+	<couches>
+		<list>
+			<neurone.Neurone id="neurone1">
+				<entrees>
+					<neurone.EntreePonderee>
+						<poids class="java.lang.Double">1.0d</poids>
+						<entree class="neurone.EntreeSimple">
+							<valeur class="java.lang.Double">0.23d</valeur>
+						</entree>
+					</neurone.EntreePonderee>
+					<neurone.EntreePonderee>
+						<poids class="java.lang.Double">4.0d</poids>
+						<entree class="neurone.EntreeSimple">
+							<valeur class="java.lang.Double">0.8d</valeur>
+						</entree>
+					</neurone.EntreePonderee>
+				</entrees>
+				<fonction class="neurone.FonctionSomme" id="fonctionSomme" />
+			</neurone.Neurone>
+			<neurone.Neurone id="neurone2">
+				<entrees>
+					<neurone.EntreePonderee>
+						<poids class="java.lang.Double">2.0d</poids>
+						<entree class="neurone.EntreeSimple">
+							<valeur class="java.lang.Double">0.11d</valeur>
+						</entree>
+					</neurone.EntreePonderee>
+					<neurone.EntreePonderee>
+						<poids class="java.lang.Double">1.0d</poids>
+						<entree class="neurone.EntreeSimple">
+							<valeur class="java.lang.Double">0.95d</valeur>
+						</entree>
+					</neurone.EntreePonderee>
+				</entrees>
+				<fonction class="neurone.FonctionSomme" reference="fonctionSomme" />
+			</neurone.Neurone>
+		</list>
+		<list>
+			<neurone.Neurone>
+				<entrees>
+					<neurone.EntreePonderee>
+						<poids class="java.lang.Double">1.0d</poids>
+						<entree class="neurone.Neurone" reference="neurone1" />
+					</neurone.EntreePonderee>
+					<neurone.EntreePonderee>
+						<poids class="java.lang.Double">1.0d</poids>
+						<entree class="neurone.Neurone" reference="neurone2" />
+					</neurone.EntreePonderee>
+				</entrees>
+				<fonction class="neurone.FonctionSomme" reference="fonctionSomme" />
+			</neurone.Neurone>
+		</list>
+	</couches>
+</neurone.ReseauComplexe>

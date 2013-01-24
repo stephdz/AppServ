@@ -1,0 +1,10 @@
+TODO :
+------
+
+ - Ajouter les transactions 
+ 	=> Récupérer une nouvelle UserTransaction dans TransactionInvocationHandler 
+ 	=> Générer les proxys TransactionInvocationHandler nécessaires dans EJBManager
+ - TODOs dans le code
+ - Gestion des EAR
+ - Limiter le nombre de threads EJB
+ - Ajouter le support des Web Services
